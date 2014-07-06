@@ -9,7 +9,7 @@ docker build -t=skablam/flask_example .
 
 Run the container with:
 
-docker run -d -P skablam/flask_example python /app.py
+docker run -d -p 5000:5000 skablam/flask_example python /app.py
 
 Find the ip address that Boot2Docker is using with:
 
