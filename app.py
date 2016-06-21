@@ -11,5 +11,13 @@ def hello_world():
 def hello_world():
     return 'BOO!'
 
+@app.route('/boom')
+def hello_world():
+    return 'BOOM!'
+
+@app.route('/zoom')
+def hello_world():
+    return 'ZOOM!'
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True, port=int(os.getenv('PORT', 5000)))
