@@ -1,4 +1,4 @@
-FROM ubuntu:12.04
+FROM python:3.5
 MAINTAINER Skablam
 RUN apt-get -qq update
 RUN apt-get -qqy install python python-pip
